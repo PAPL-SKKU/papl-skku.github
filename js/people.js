@@ -3,7 +3,7 @@ var person = [
 {"status":"PhD","name_kr":"장학범","name_en":"Hakbeom Jang","picture":"images/people/hb.jpg","url":"javascript:void(0);","team":"uncore"},
 {"status":"PhD","name_kr":"이용준","name_en":"Youngjun Lee","picture":"js/holder.js?100x150","url":"javascript:void(0);","team":"uncore"},
 {"status":"PhD","name_kr":"장재영","name_en":"Jaeyoung Jang","picture":"images/people/jy.jpg","url":"javascript:void(0);","team":"supercomputing"},
-{"status":"PhD","name_kr":"김찬노","name_en":"Channoh Kim","picture":"images/people/cn.jpg","url":"http://parallel.skku.edu/~channoh","team":"pjs"},
+{"status":"PhD","name_kr":"김찬노","name_en":"Channoh Kim","picture":"images/people/cn.jpg","url":"http://parallel.skku.edu/people/channoh","team":"pjs"},
 {"status":"Post MS","name_kr":"박향란","name_en":"Xianglan Piao","picture":"images/people/hl.jpg","url":"javascript:void(0);","team":"pjs"},
 {"status":"PhD","name_kr":"오영환","name_en":"Younghwan Oh","picture":"images/people/oyh.jpg","url":"http://micol.tistory.com","team":"pjs core"},
 
