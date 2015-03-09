@@ -1,0 +1,338 @@
+@import url('font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+@import url('http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
+/************************
+ * Base
+ ************************/
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+}
+
+body > section {
+    padding-top: 70px;
+    min-height: 100%;
+}
+
+footer {
+    padding-bottom: 2em;
+}
+
+a {
+    color: #428bca;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 3em;
+    padding-bottom: 1em;
+    letter-spacing: 0.05em;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-header .navbar-brand {
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Dosis' sans-serif;
+    color: Black;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.people.header .active,
+.people.header a:hover {
+/*
+    background-color: #39b3d7;
+*/
+    background-color: #428bca;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+.text-shadow {
+    -moz-text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000,
+    0 0 25px #000, 0 0 25px #000;
+    -webkit-text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000,
+    0 0 25px #000, 0 0 25px #000;
+    text-shadow: 0 0 25px #000, 0 0 25px #000, 0 0 25px #000, 0 0 25px #000,
+    0 0 25px #000, 0 0 25px #000;
+}
+
+
+/************************
+ * Home
+ ************************/
+
+#home .header {
+    min-height: 501px;
+    background: url('../images/library.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header > .content {
+    color: white;
+    max-width: 60em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 8em 0;
+    line-height: 2em;
+    text-align: center;
+}
+
+.header > .content > h1 {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+.header > .content > p {
+    font-size: 1.5em;
+}
+
+
+/************************
+ * News
+ ************************/
+
+#news {
+    min-height: 20em;
+}
+
+#news ul {
+    padding-left: 0;
+}
+
+#news li {
+    list-style: none;
+    padding-left: 8em;
+    text-indent: -4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+#news li:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+*/
+
+#news .date {
+    display: inline-block;
+    width: 4em;
+}
+
+/************************
+ * Research
+ ************************/
+
+.research {
+    padding-bottom: 1em;
+}
+
+.research .thumbnail .caption h4 {
+    line-height: 1.25em;
+    min-height: 3.75em;
+}
+
+.research .thumbnail .caption p {
+    position: absolute;
+    top: 1em;
+    padding-left: 0.5em;
+    padding-right: 2em;
+
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.research .thumbnail:hover {
+    text-decoration: none;
+}
+
+.research .thumbnail:hover img {
+    opacity: 0.05;
+}
+
+.research .thumbnail:hover .caption p {
+    opacity: 1;
+}
+
+/************************
+ * People
+ ************************/
+
+#faculty .row,
+#phd .row,
+#ms .row {
+    min-height: 220px;
+}
+
+.person .thumbnail {
+    width: 170px;
+    height: 220px;
+    border: 0;
+    background: transparent;
+}
+
+.person .thumbnail .caption {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+.person .thumbnail:not([href="#"]):hover {
+*/
+.person .thumbnail:hover {
+    position: relative;
+    top: -10px;
+}
+
+.person .thumbnail[href^="javascript"]:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.person .thumbnail:not([href^="javascript"]):hover .caption h4,
+.person .thumbnail:not([href^="javascript"]):hover .caption h4 small
+{
+    color: #428bca;
+}
+
+.person .thumbnail img {
+    width: 100px;
+    height: 150px;
+    border: solid 1px black;
+    padding: 0;
+    border-radius: 6px;
+}
+
+#alumni .row{
+    padding-left: 3em;
+}
+
+
+/************************
+ * Publicatons
+ ************************/
+
+#pubs {
+    padding-bottom: 0;
+}
+
+#pubs > .container {
+    padding-bottom: 70px;
+}
+
+.paper {
+    padding-bottom: 0.1em;
+ }
+ 
+.paper .fa {
+}
+
+.paper h4 {
+    margin-bottom: 0;
+}
+
+.paper a {
+    color: black;
+}
+
+.paper a:hover {
+    color: #428bca;
+}
+
+.code {
+    padding: 4em;
+}
+
+
+
+/************************
+ * Contact
+ ************************/
+
+#contact #map_canvas {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+
+
+
+/************************
+ * Team
+ ************************/
+
+.header.pjs {
+    min-height: 500px;
+    width: 100%;
+    background: url('../images/datacenter.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+
+/*
+h1, h2 {
+    font-family: 'Dosis';
+}
+*/
+
+@media screen and (max-width: 680px) {
+    #home .main div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #map_canvas { height: 300px; }
+    .paper > .col-xs-2 { display: none !important; }
+    .paper > .col-xs-10 { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+    .header > .content { width: 95%; }
+    .header > .content p { display: none; }
+}

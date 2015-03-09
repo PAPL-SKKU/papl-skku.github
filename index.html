@@ -1,1 +1,301 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PAPL@SKKU</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Customize -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/style-scroll.css" rel="stylesheet" media="screen">
+
+    <!-- Async script load -->
+    <script>
+    function loadScript() {
+        var script1 = document.createElement("script");
+        script1.type = 'text/javascript';
+        script1.async = true;
+        script1.src="https://apis.google.com/js/client.js?onload=initRecentNews";
+        document.body.appendChild(script1);
+
+        var script2 = document.createElement("script");
+        script2.type = 'text/javascript';
+        script2.async = true;
+        script2.src = "https://maps.googleapis.com/maps/api/js?callback=initGoogleMap";
+        document.body.appendChild(script2);
+    }
+    window.onload = loadScript;
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-target" data-offset="120">
+
+    <!-- Nav -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-target">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="http://parallel.skku.edu">PAPL</a>
+            </div>
+            <div class="navbar-target navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Projects<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="pjs.html">Parallel JS</a>
+                            <li><a href="core.html">Core</a>
+                            <li><a href="uncore.html">Uncore</a>
+                            <li><a href="supercomputing.html">Super Computing</a>
+                        </ul>
+                    </li>
+                    <li><a class="page-scroll" href="#people">People</a></li>
+                    <li><a class="page-scroll" href="#pubs">Publications</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a href="code.html">Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="header container-fluid">
+            <div class="content text-shadow">
+                <h1>Parallel Architecture & Programming Lab<br></h1>
+                <p>
+                컴퓨터 아키텍쳐, 컴파일러, 병렬 프로그래밍, VLSI 설계,
+                및 컴퓨터 보안에 관한 연구를 수행하고 있다. 최근에는
+                모바일 기기로부터 서버 클라우드 까지 다양한 멀티코어
+                플랫폼에서 소프트웨어를 가속하고, 플랫폼의 유용성을
+                극대화 하기 위한 프로그램 병렬화 및 최적화 기술,
+                프로세서 및 메모리 시스템 아키텍쳐 등을 연구하고 있다.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- News -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="news">
+                        <h3>What's New <i class="fa fa-refresh fa-spin"></i></h3>
+                        <ul id="news-target">
+                            <!-- News Contents -->
+                        </ul>
+                        <p>
+                        <a href="https://plus.google.com/u/2/104699396985331226920/posts" class="btn btn-default btn-primary">See more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- News End -->
+
+            <!-- Research -->
+            <h3>Research Area</h3>
+            <div class="row">
+                <div class="research col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <a href="pjs.html" class="thumbnail">
+                        <img src="images/pjs.png">
+                        <div class="caption">
+                            <h4>Parallel JavaScript</h4>
+                            <p>
+                            We've studied data parallelization (Web Worker, WebCL)
+                            speculative parallelization, and DVFS on Web platform 
+                            for heterogeneous multicore architecture.
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="research col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <a href="core.html" class="thumbnail">
+                        <img src="js/holder.js?600x352/auto">
+                        <div class="caption">
+                            <h4>Heterogeneous Multicore Architectures</h4>
+                            <p>
+                            Please fill here.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="research col-xs-6 col-md-3 wow fadeInRight" data-wow-delay="0.4s">
+                    <a href="uncore.html" class="thumbnail">
+                        <img src="js/holder.js?600x352/auto">
+                        <div class="caption">
+                            <h4>Novel Memory Technologies and Software Optimization</h4>
+                            <p>
+                            Please fill here.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="research col-xs-6 col-md-3 wow fadeInRight" data-wow-delay="0.4s">
+                    <a href="supercomputing.html" class="thumbnail">
+                        <img src="js/holder.js?600x352/auto">
+                        <div class="caption">
+                            <h4>Parallelization Frameworks for Manycores</h4>
+                            <p>
+                            Please fill here.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Research End -->
+        </div>
+
+    </section>
+
+    <!-- People -->
+    <section id="people">
+        <div class="container">
+            <h2>People</h2>
+            <div class="content">
+                <div class='people header text-center'>
+                    <div class='btn-group'>
+                        <a href="javascript:teamFilter('all')" class='btn btn-default active'>All</a>
+                        <a href="javascript:teamFilter('pjs')" class='btn btn-default'>Parallel JS</a>
+                        <a href="javascript:teamFilter('core')" class='btn btn-default'>Core</a>
+                        <a href="javascript:teamFilter('uncore')" class='btn btn-default'>Uncore</a>
+                        <a href="javascript:teamFilter('supercomputing')" class='btn btn-default'>Super Computing</a>
+                    </div>
+                </div>
+
+                <div id="faculty">
+                    <h3>Faculty</h3>
+                    <div class="row">
+                    </div>
+                </div>
+
+                <div id="phd">
+                    <h3>Ph.D. Candidate Students</h3>
+                    <div class="row">
+                    </div>
+                </div>
+
+                <div id="ra">
+                    <h3>Research Assistants</h3>
+                    <div class="row">
+                    </div>
+                </div>
+
+                <div id="ms">
+                    <h3>M.S. Candidate Students</h3>
+                    <div class="row">
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-center">
+                <a href="people" class="btn btn-default btn-primary">See more</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="pubs">
+        <div class="container">
+            <h2>Recent / Selected Publications</h2>
+            <div class="content">
+                <h3>International Conferences and Journals</h3>
+                <div id="conference">
+                </div>
+                <h3>International Workshops</h3>
+                <div id="workshop">
+                </div>
+            </div>
+            <p class="text-center">
+                <br>
+                <a href="pubs" class="btn btn-default btn-primary">See more</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div id="map_canvas"></div>
+            <p class="wow fadeInLeft">
+                <br>
+                <i class="fa fa-map-marker fa-fw"></i><strong>Address</strong><br>
+                Semiconductor Building Room #509 (#400509)<br>
+                300 Cheoncheon-Dong, Jangan-Gu, Suwon, Gyeonggi-Do, 440-746, Korea<br><br>
+                <i class="fa fa-phone fa-fw"></i>(+82) 31-299-4600<br>
+                <i class="fa fa-clock-o fa-fw"></i>Monday-Friday 10am-6pm, Saturday 10am-1pm<br>
+                <br><br>
+            </p>
+            <footer>
+                <hr>
+                College of Information and Communication Engineering at
+                <a href="http://www.skku.edu">SungKyungKwan University</a><br>
+                <a href="https://sites.google.com/site/skkupapl">Private wiki</a>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Script files -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Data files -->
+    <script src="js/people.js"></script>
+    <script src="js/pubs.js"></script>
+
+    <script>
+    loadPeople(person, false);
+    loadPubs(paper, false);
+
+    // mobile nav toggle
+    if (!isMobile()) {
+        new WOW().init();
+    } else {
+        $('nav a').on('click', function() {
+            $(".navbar-toggle").click();
+        });
+    }
+
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            var top = $($anchor.attr('href')).offset().top;
+            $('html, body').stop().animate({
+                scrollTop: top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+    $(".people.header a").on('click', function() {
+        $(".people.header a.active").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    </script>
+
+</body>
+</html>
