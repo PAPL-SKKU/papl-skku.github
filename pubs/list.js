@@ -1,4 +1,4 @@
-var person = [
+var paper = [
 {
 "title": "QPR.JS: A Runtime Framework for QoS-Aware Power",
 "abbr": "ISLPED-Poster '14",
