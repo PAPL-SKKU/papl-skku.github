@@ -36,7 +36,7 @@ var person = [
 	"name_kr": "김찬노",
 	"name_en": "Channoh Kim",
 	"picture": "people/images/cn.jpg",
-	"url": "http://parallel.skku.edu/people/channoh",
+	"url": "http://channoh.blogspot.kr/p/about-me.html",
 	"team": "pjs"
 },
 {
