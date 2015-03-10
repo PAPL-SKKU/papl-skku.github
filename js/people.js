@@ -3,7 +3,7 @@ var person = [
 	"status": "Faculty",
 	"name_kr": "이재욱",
 	"name_en": "Jae W. Lee",
-	"picture": "images/people/jw.jpg",
+	"picture": "people/images/jw.jpg",
 	"url": "http://prof.icc.skku.ac.kr/~jaewlee/",
 	"team": "all"
 },
@@ -11,7 +11,7 @@ var person = [
 	"status": "PhD",
 	"name_kr": "장학범",
 	"name_en": "Hakbeom Jang",
-	"picture": "images/people/hb.jpg",
+	"picture": "people/images/hb.jpg",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -27,7 +27,7 @@ var person = [
 	"status": "PhD",
 	"name_kr": "장재영",
 	"name_en": "Jaeyoung Jang",
-	"picture": "images/people/jy.jpg",
+	"picture": "people/images/jy.jpg",
 	"url": "javascript:void(0);",
 	"team": "supercomputing"
 },
@@ -35,7 +35,7 @@ var person = [
 	"status": "PhD",
 	"name_kr": "김찬노",
 	"name_en": "Channoh Kim",
-	"picture": "images/people/cn.jpg",
+	"picture": "people/images/cn.jpg",
 	"url": "http://parallel.skku.edu/people/channoh",
 	"team": "pjs"
 },
@@ -43,7 +43,7 @@ var person = [
 	"status": "PhD",
 	"name_kr": "오영환",
 	"name_en": "Younghwan Oh",
-	"picture": "images/people/oyh.jpg",
+	"picture": "people/images/oyh.jpg",
 	"url": "http://micol.tistory.com",
 	"team": "pjs core"
 },
@@ -59,7 +59,7 @@ var person = [
 	"status": "Post MS",
 	"name_kr": "박향란",
 	"name_en": "Xianglan Piao",
-	"picture": "images/people/hl.jpg",
+	"picture": "people/images/hl.jpg",
 	"url": "javascript:void(0);",
 	"team": "pjs"
 },
@@ -67,7 +67,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김윤극",
 	"name_en": "Yunkeuk Kim",
-	"picture": "images/people/yk.png",
+	"picture": "people/images/yk.png",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -75,7 +75,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "하상진",
 	"name_en": "Sangjin Ha",
-	"picture": "images/people/hsj.jpg",
+	"picture": "people/images/hsj.jpg",
 	"url": "javascript:void(0);",
 	"team": "supercomputing"
 },
@@ -83,7 +83,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "박양훈",
 	"name_en": "Yanghun Park",
-	"picture": "images/people/pyh.jpg",
+	"picture": "people/images/pyh.jpg",
 	"url": "javascript:void(0);",
 	"team": "supercomputing"
 },
@@ -91,7 +91,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김재혁",
 	"name_en": "Jaehyeok Kim",
-	"picture": "images/people/kjh.jpg",
+	"picture": "people/images/kjh.jpg",
 	"url": "javascript:void(0);",
 	"team": "core"
 },
@@ -99,7 +99,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "우승진",
 	"name_en": "Seungjin Woo",
-	"picture": "images/people/wsj.jpg",
+	"picture": "people/images/wsj.jpg",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -107,7 +107,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "정동환",
 	"name_en": "Donghwan Jeong",
-	"picture": "images/people/dh.jpg",
+	"picture": "people/images/dh.jpg",
 	"url": "javascript:void(0);",
 	"team": "core"
 },
@@ -115,7 +115,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "리혜영",
 	"name_en": "Huiying Li",
-	"picture": "images/people/hy.png",
+	"picture": "people/images/hy.png",
 	"url": "javascript:void(0);",
 	"team": "pjs"
 },
@@ -123,7 +123,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "양경연",
 	"name_en": "Kyungyeon Yang",
-	"picture": "images/people/ky.png",
+	"picture": "people/images/ky.png",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -131,7 +131,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김종원",
 	"name_en": "Jongwon Kim",
-	"picture": "images/people/kjw.jpg",
+	"picture": "people/images/kjw.jpg",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -139,7 +139,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김두영",
 	"name_en": "Dooyoung Kim",
-	"picture": "images/people/dy.jpg",
+	"picture": "people/images/dy.jpg",
 	"url": "javascript:void(0);",
 	"team": "core"
 },
