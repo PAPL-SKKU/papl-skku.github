@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SC@PAPL</title>
+		<base href="../">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Customize -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand" href="http://parallel.skku.edu">PAPL</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="pjs.html">Parallel JS</a>
+                            <li><a href="core.html">Core</a>
+                            <li><a href="uncore.html">Uncore</a>
+                            <li><a href="supercomputing.html">Super Computing</a>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#people">People</a></li>
+                    <li><a href="index.html#pubs">Publications</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="code.html">Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section id="content">
+        <div class="header">
+            <div class="content text-shadow">
+                <h1>High-Performance, Energy-Efficient Accelerator Design</h1>
+                <p>
+                Please fill here.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h3>About Us</h3>
+                <p>
+                We are awesome!
+                </p>
+                <hr>
+
+                <h3>The Current Team</h3>
+                <div class="team member row">
+                </div>
+                <hr>
+
+                <h3>All Project Publications</h3>
+                <div class="team pubs">
+                </div>
+            </div>
+
+            <footer>
+                <hr>
+                College of Semiconductor Systems Engineering at
+                <a href="http://www.skku.edu">SungKyungKwan University</a><br>
+                <a href="https://sites.google.com/site/skkupapl">Private wiki</a>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Script files -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="js/people.js"></script>
+    <script src="js/pubs.js"></script>
+    <script>
+    var team = "supercomputing";
+    $(".dropdown").addClass("active");
+    $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
+    $(".header").addClass(team);
+
+    for (var i in person) {
+        var c = person[i];
+        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
+        // if (c.team != undefined) {
+            var content =   "<div class='person col-md-2 col-sm-3 col-xs-6 wow bounceIn "+c.team+"'>\
+                                <a href='"+c.url+"' class='thumbnail' target='_blank'>\
+                                <img src='"+c.picture+"'>\
+                                <div class='caption'>\
+                                    <h4>"+c.name_en+"<br><small>"+c.name_kr+"</small></h4>\
+                                </div>\
+                                </a>\
+                            </div>";
+            $(".team.member").append(content);
+        }
+    }
+
+    for (var i in paper) {
+        var c = paper[i];
+        if (c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
+            var content = "\
+            <div class='row paper'>\
+                <div class='col-xs-2'>\
+                    <h4>"+c.abbr+"</h4>\
+                </div>\
+                <div class='col-xs-10'>\
+                    <h4>"+c.title+"</h4>\
+                    <p>\
+                    "+c.authors+"<br>\
+                    <i>"+c.conference+"</i>, "+c.place+", "+c.date+". "+c.remark+"\
+                    </p>\
+                </div>\
+            </div>";
+            $(".team.pubs").append(content);
+        }
+    }
+
+    if (!isMobile()) {
+        new WOW().init();
+    }
+
+    </script>
+
+</body>
+</html>
