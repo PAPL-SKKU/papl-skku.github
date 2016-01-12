@@ -46,7 +46,7 @@ var person = [
 	"name_en": "Younghwan Oh",
 	"picture": "people/images/oyh.jpg",
 	"url": "http://micol.tistory.com",
-	"team": "core"
+	"team": "core pjs"
 },
 {
 	"status": "PhD",
@@ -127,7 +127,7 @@ var person = [
 	"name_en": "Hyeongyu Cho",
 	"picture": "js/holder.js?100x150",
 	"url": "javascript:void(0);",
-	"team": "uncore"
+	"team": "pjs uncore"
 },
 {
 	"status": "MS",
