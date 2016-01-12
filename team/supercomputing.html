@@ -110,25 +110,7 @@
         }
     }
 
-    for (var i in paper) {
-        var c = paper[i];
-        if (c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
-            var content = "\
-            <div class='row paper'>\
-                <div class='col-xs-2'>\
-                    <h4>"+c.abbr+"</h4>\
-                </div>\
-                <div class='col-xs-10'>\
-                    <h4>"+c.title+"</h4>\
-                    <p>\
-                    "+c.authors+"<br>\
-                    <i>"+c.conference+"</i>, "+c.place+", "+c.date+". "+c.remark+"\
-                    </p>\
-                </div>\
-            </div>";
-            $(".team.pubs").append(content);
-        }
-    }
+    loadPubs(team);
 
     if (!isMobile()) {
         new WOW().init();

@@ -142,13 +142,20 @@ var initRecentNews = news.init;
 
 function teamFilter(team) {
     $(".person").css("visibility", "visible");
+    $(".alumni").css("visibility", "visible");
     if (team === "all") {
         $(".person").show(400);
+        $(".alumni").show(400);
 
     } else {
         $(".person."+team+"").show(400);
+        $(".alumni."+team+"").show(400);
         $(".person").not(".all, ."+team+"").hide(400);
+        $(".alumni").not(".all, ."+team+"").hide(400);
     }
+
+    $("#people .btn.active").removeClass("active");
+    $("#people .btn."+team).addClass("active");
 
 }
 
@@ -166,7 +173,7 @@ function loadPeople(person, all) {
     }
 
     function alumni(c) {
-        var content =   "<div class='row wow bounceIn'>\
+        var content =   "<div class='alumni row wow bounceIn "+c.team+"'>\
                             <div class='col-xs-12'>\
                                 <h4>"+c.name_en+" <small>("+c.name_kr+")</small></h4>\
                                 <p>"+c.status+". Now at "+c.position+"</p>\
@@ -199,6 +206,23 @@ function loadPeople(person, all) {
     }
 }
 
+function loadPubs(team) {
+    $.get('pubs/conf.html', function(data) {
+            $.each($(data), function(idx, val) {
+                if ($(val).hasClass(team))
+                $(".pubs").append(val);
+                });
+            });
+
+    $.get('pubs/workshop.html', function(data) {
+            $.each($(data), function(idx, val) {
+                if ($(val).hasClass(team)) {
+                $(".pubs").append(val);
+                }
+                });
+            });
+}
+/*
 function loadPubs(paper, all, team) {
     var title;
     for (var i in paper) {
@@ -226,12 +250,13 @@ function loadPubs(paper, all, team) {
         }
     }
 }
+*/
 
 function loadTeamBtn() {
     var dropdown = "";
     var filter = "";
     for (var i in team) {
-        filter += "<a href=\"javascript:teamFilter('"+team[i].key+"')\" class='btn btn-default'>"+team[i].name+"</a>";
+        filter += "<a href=\"javascript:teamFilter('"+team[i].key+"')\" class='btn btn-default "+team[i].key+"'>"+team[i].key+"</a>";
     }
     $("#people .btn-group").append(filter);
 }
