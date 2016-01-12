@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>People@PAPL</title>
-		<base href="../">
+    <title>Pubs@PAPL</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,43 +38,18 @@
         </div>
     </nav>
 
-    <!-- People -->
-    <section id="people">
+    <!-- Content -->
+    <section id="content">
         <div class="container">
-            <h2>People</h2>
+            <h2>Publications</h2>
             <div class="content">
-                <div class='people header text-center'>
-                    <div class='btn-group'>
-                        <a href="javascript:teamFilter('all')" class='btn btn-default active'>All</a>
-                    </div>
+
+                <h3>International Conferences and Journals</h3>
+                <div id="conference">
                 </div>
 
-                <h3>Faculty</h3>
-                <div id="faculty">
-                    <div class="row">
-                    </div>
-                </div>
-
-                <h3>Ph.D. Candidate Students</h3>
-                <div id="phd">
-                    <div class="row">
-                    </div>
-                </div>
-
-                <h3>Research Assistants</h3>
-                <div id="ra">
-                    <div class="row">
-                    </div>
-                </div>
-
-                <h3>M.S. Candidate Students</h3>
-                <div id="ms">
-                    <div class="row">
-                    </div>
-                </div>
-
-                <h3>Alumni</h3>
-                <div id="alumni">
+                <h3>International Workshops</h3>
+                <div id="workshop">
                 </div>
 
             </div>
@@ -87,7 +61,7 @@
                 <a href="https://sites.google.com/site/skkupapl">Private wiki</a>
             </footer>
         </div>
-    </section>
+    </div>
 
     <!-- Script files -->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -96,14 +70,13 @@
     <script src="js/custom.js"></script>
 
     <!-- Data files -->
-    <script src="people/list.js"></script>
-    <script src="people/alumni.js"></script>
+    <script src="pubs/list.js"></script>
     <script src="team/list.js"></script>
 
     <script>
     loadMenu(team);
-    loadPeople(person, true);
-    loadTeamBtn(team);
+    loadPubs(paper, true);
+    $(".navbar ul li a[href='index.html#pubs']").parent().addClass("active");
     </script>
 
 </body>
