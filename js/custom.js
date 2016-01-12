@@ -269,8 +269,8 @@ function loadMenu(team, current) {
             <ul class=\"dropdown-menu\" role=\"menu\">\n\
             </ul>\n\
         </li>\n\
-        <li><a href=\"people\">People</a></li>\n\
-        <li><a href=\"pubs\">Publications</a></li>\n\
+        <li><a href=\"people/\">People</a></li>\n\
+        <li><a href=\"pubs/\">Publications</a></li>\n\
         <li><a href=\"contact.html\">Contact</a></li>\n\
         <li><a href=\"code.html\">Code</a></li>");
 
