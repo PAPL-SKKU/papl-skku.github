@@ -33,20 +33,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="pjs.html">Parallel JS</a>
-                            <li><a href="core.html">Core</a>
-                            <li><a href="uncore.html">Uncore</a>
-                            <li><a href="supercomputing.html">Super Computing</a>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#people">People</a></li>
-                    <li><a href="index.html#pubs">Publications</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="code.html">Code</a></li>
+                    <!-- Menu -->
                 </ul>
             </div>
         </div>
@@ -96,9 +83,12 @@
     <script src="js/holder.js"></script>
     <script src="js/custom.js"></script>
 
-    <script src="js/people.js"></script>
-    <script src="js/pubs.js"></script>
+    <!-- Data files -->
+    <script src="team/list.js"></script>
+    <script src="people/list.js"></script>
+    <script src="pubs/list.js"></script>
     <script>
+    loadMenu(team);
     var team = "core";
     $(".dropdown").addClass("active");
     $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");

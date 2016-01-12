@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UnCore@PAPL</title>
+    <title>PJS@PAPL</title>
 		<base href="../">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,9 +43,11 @@
     <section id="content">
         <div class="header">
             <div class="content text-shadow">
-                <h1>Novel Memory Technologies and Software Optimization</h1>
+                <h1>Parallel JavaScript</h1>
                 <p>
-                Please fill here.
+                We've studied data parallelization (Web Worker, WebCL)
+                speculative parallelization, and DVFS on Web platform 
+                for heterogeneous multicore architecture.
                 </p>
             </div>
         </div>
@@ -89,9 +91,10 @@
     <script src="pubs/list.js"></script>
     <script>
     loadMenu(team);
-    var team = "uncore";
+
+    var team = "rcloud";
     $(".dropdown").addClass("active");
-    $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
+    // $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
     $(".header").addClass(team);
 
     for (var i in person) {
@@ -110,25 +113,7 @@
         }
     }
 
-    for (var i in paper) {
-        var c = paper[i];
-        if (c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
-            var content = "\
-            <div class='row paper'>\
-                <div class='col-xs-2'>\
-                    <h4>"+c.abbr+"</h4>\
-                </div>\
-                <div class='col-xs-10'>\
-                    <h4>"+c.title+"</h4>\
-                    <p>\
-                    "+c.authors+"<br>\
-                    <i>"+c.conference+"</i>, "+c.place+", "+c.date+". "+c.remark+"\
-                    </p>\
-                </div>\
-            </div>";
-            $(".team.pubs").append(content);
-        }
-    }
+    loadPubs(paper, true, team);
 
     if (!isMobile()) {
         new WOW().init();

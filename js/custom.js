@@ -277,7 +277,8 @@ function loadMenu(team, current) {
     $(".nav .dropdown .dropdown-menu").append(dropdown);
  
     // highlight current page
-    $('a[href="' + this.location.pathname.split("/").pop() + '"]').parent().addClass('active');
+    console.log(this.location.pathname);
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
 }
 
 /* mobile nav toggle */
