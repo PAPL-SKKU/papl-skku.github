@@ -114,6 +114,10 @@
     <script>
     loadMenu(team);
     loadResearchArea(team);
+
+    if (!isMobile()) {
+        new WOW().init();
+    }
     </script>
 
 </body>

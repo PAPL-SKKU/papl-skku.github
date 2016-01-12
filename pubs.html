@@ -79,6 +79,10 @@
     loadMenu(team);
     $("#conference").load("pubs/conf.html");
     $("#workshop").load("pubs/workshop.html");
+
+    if (!isMobile()) {
+        new WOW().init();
+    }
     </script>
 
 </body>

@@ -105,6 +105,10 @@
     loadMenu(team);
     loadPeople(person, true);
     loadTeamBtn(team);
+
+    if (!isMobile()) {
+        new WOW().init();
+    }
     </script>
 
 </body>
