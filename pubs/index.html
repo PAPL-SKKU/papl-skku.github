@@ -33,21 +33,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="team/pjs.html">Parallel JS</a>
-                            <li><a href="team/core.html">Core</a>
-                            <li><a href="team/uncore.html">Uncore</a>
-                            <li><a href="team/supercomputing.html">Super Computing</a>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#people">People</a></li>
-                    <li><a href="index.html#pubs">Publications</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="pages.html?page=code">Code</a></li>
+                    <!-- Menu -->
                 </ul>
             </div>
         </div>
@@ -86,8 +72,10 @@
 
     <!-- Data files -->
     <script src="pubs/list.js"></script>
+    <script src="team/list.js"></script>
 
     <script>
+    loadMenu(team);
     loadPubs(paper, true);
     $(".navbar ul li a[href='index.html#pubs']").parent().addClass("active");
     </script>

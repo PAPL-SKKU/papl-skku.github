@@ -226,3 +226,66 @@ function loadPubs(paper, all, team) {
         }
     }
 }
+
+function loadTeamBtn() {
+    var dropdown = "";
+    var filter = "";
+    for (var i in team) {
+        filter += "<a href=\"javascript:teamFilter('"+team[i].key+"')\" class='btn btn-default'>"+team[i].name+"</a>";
+    }
+    $("#people .btn-group").append(filter);
+}
+
+function loadResearchArea(team) {
+    for (var i in team) {
+        var template = "\
+        <div class=\"research col-xs-6 col-md-3 wow fadeInDown\" data-wow-delay=\"0.4s\">\
+            <a href=\"team/"+team[i].key+".html\" class=\"thumbnail\">\
+                <img src=\""+team[i].thumbnail+"\">\
+                <div class=\"caption\">\
+                    <h4>"+team[i].name+"</h4>\
+                    <p>\
+                    "+team[i].desc+"\
+                    </p>\
+                </div>\
+            </a>\
+        </div>";
+        $("#research").append(template);
+    }
+}
+
+function loadMenu(team, current) {
+    var dropdown = "";
+    var filter = "";
+    for (var i in team) {
+        dropdown += "<li><a href='team/"+team[i].key+".html'>"+team[i].name+"</a>";
+    }
+
+   $(".nav").append("\
+        <li><a href=\"index.html\">Home</a></li>\n\
+        <li class=\"dropdown\">\n\
+            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n\
+                Projects<span class=\"caret\"></span></a>\n\
+            <ul class=\"dropdown-menu\" role=\"menu\">\n\
+            </ul>\n\
+        </li>\n\
+        <li><a href=\"people\">People</a></li>\n\
+        <li><a href=\"pubs\">Publications</a></li>\n\
+        <li><a href=\"contact.html\">Contact</a></li>\n\
+        <li><a href=\"code.html\">Code</a></li>");
+
+    $(".nav .dropdown .dropdown-menu").append(dropdown);
+ 
+    // highlight current page
+    $('a[href="' + this.location.pathname.split("/").pop() + '"]').parent().addClass('active');
+}
+
+/* mobile nav toggle */
+// if (!isMobile()) {
+    // new WOW().init();
+// } else {
+    // $('nav a').on('click', function() {
+        // $(".navbar-toggle").click();
+    // });
+// }
+

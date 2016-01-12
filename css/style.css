@@ -193,11 +193,13 @@ li.dropdown:hover ul.dropdown-menu {
  * People
  ************************/
 
+/*
 #faculty .row,
 #phd .row,
 #ms .row {
     min-height: 220px;
 }
+*/
 
 .person .thumbnail {
     width: 170px;
@@ -312,6 +314,19 @@ li.dropdown:hover ul.dropdown-menu {
 }
 
 
+
+#people {
+    background-color: #f4f4f4;
+}
+
+#code {
+    background-color: #fafafa;
+}
+
+#contact {
+    background-color: #333;
+    color: white;
+}
 
 /*
 h1, h2 {

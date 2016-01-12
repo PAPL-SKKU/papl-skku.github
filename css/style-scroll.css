@@ -12,18 +12,6 @@ body > section {
     min-height: 100%;
 }
 
-#people {
-    background-color: #f4f4f4;
-}
-
-#code {
-    background-color: #fafafa;
-}
-
-#contact {
-    background-color: #333;
-    color: white;
-}
 
 .style1 {
     background: url('../images/overlay.png'), url('../images/one.jpg');

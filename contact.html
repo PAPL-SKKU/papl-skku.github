@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code@PAPL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PAPL@SKKU</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,20 +18,33 @@
 
     <!-- Customize -->
     <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Async script load -->
+    <script>
+    function loadScript() {
+        var script2 = document.createElement("script");
+        script2.type = 'text/javascript';
+        script2.async = true;
+        script2.src = "https://maps.googleapis.com/maps/api/js?callback=initGoogleMap";
+        document.body.appendChild(script2);
+    }
+    window.onload = loadScript;
+    </script>
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar-target" data-offset="120">
 
     <!-- Nav -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-target">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-bars"></span>
                 </button>
-                <a class="navbar-brand" href="http://parallel.skku.edu">PAPL</a>
+                <a class="navbar-brand page-scroll" href="http://parallel.skku.edu">PAPL</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-target navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Menu -->
                 </ul>
@@ -38,17 +52,20 @@
         </div>
     </nav>
 
-    <!-- Content -->
-    <section id="content">
+    <!-- Contact -->
+    <section id="contact">
         <div class="container">
-            <h2>Released codes</h2>
-            <div class="content">
-                <ul>
-                    <li><a href="https://github.com/PAPL-SKKU/">jAWS</a> - A JavaScript framework for CPU-GPU Work Sharing</li>
-                    <li><a href="https://github.com/PAPL-SKKU/">ParallelArray</a> - Data parallelism in web applications</li>
-                </ul>
-            </div>
-
+            <h2>Contact Us</h2>
+            <div id="map_canvas"></div>
+            <p class="wow fadeInLeft">
+                <br>
+                <i class="fa fa-map-marker fa-fw"></i><strong>Address</strong><br>
+                Semiconductor Building Room #509 (#400509)<br>
+                300 Cheoncheon-Dong, Jangan-Gu, Suwon, Gyeonggi-Do, 440-746, Korea<br><br>
+                <i class="fa fa-phone fa-fw"></i>(+82) 31-299-4600<br>
+                <i class="fa fa-clock-o fa-fw"></i>Monday-Friday 10am-6pm, Saturday 10am-1pm<br>
+                <br><br>
+            </p>
             <footer>
                 <hr>
                 College of Information and Communication Engineering at
@@ -60,7 +77,10 @@
 
     <!-- Script files -->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
 
     <!-- Data files -->

@@ -33,38 +33,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="team/pjs.html">Parallel JS</a>
-                            <li><a href="team/core.html">Core</a>
-                            <li><a href="team/uncore.html">Uncore</a>
-                            <li><a href="team/supercomputing.html">Super Computing</a>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#people">People</a></li>
-                    <li><a href="index.html#pubs">Publications</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="code.html">Code</a></li>
+                    <!-- Menu -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Content -->
-    <section id="content">
+    <!-- People -->
+    <section id="people">
         <div class="container">
             <h2>People</h2>
             <div class="content">
                 <div class='people header text-center'>
                     <div class='btn-group'>
                         <a href="javascript:teamFilter('all')" class='btn btn-default active'>All</a>
-                        <a href="javascript:teamFilter('pjs')" class='btn btn-default'>Parallel JS</a>
-                        <a href="javascript:teamFilter('core')" class='btn btn-default'>Core</a>
-                        <a href="javascript:teamFilter('uncore')" class='btn btn-default'>Uncore</a>
-                        <a href="javascript:teamFilter('supercomputing')" class='btn btn-default'>Super Computing</a>
                     </div>
                 </div>
 
@@ -115,14 +97,13 @@
 
     <!-- Data files -->
     <script src="people/list.js"></script>
+    <script src="people/alumni.js"></script>
+    <script src="team/list.js"></script>
 
     <script>
+    loadMenu(team);
     loadPeople(person, true);
-    $(".navbar ul li a[href='index.html#people']").parent().addClass("active");
-    $(".people.header a").on('click', function() {
-        $(".people.header a.active").removeClass("active");
-        $(this).addClass("active");
-    });
+    loadTeamBtn(team);
     </script>
 
 </body>
