@@ -133,8 +133,8 @@ var person = [
 	"status": "MS",
 	"name_kr": "김성민",
 	"name_en": "Sungmin Kim",
-	"picture": "js/holder.js?100x150",
 	"picture": "people/images/sm.jpg",
+	"url": "javascript:void(0);",
 	"team": "pjs"
 },
 {
