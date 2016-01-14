@@ -125,7 +125,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "조현규",
 	"name_en": "Hyeongyu Cho",
-	"picture": "js/holder.js?100x150",
+	"picture": "people/images/hg.jpg",
 	"url": "javascript:void(0);",
 	"team": "pjs uncore"
 },
@@ -134,7 +134,7 @@ var person = [
 	"name_kr": "김성민",
 	"name_en": "Sungmin Kim",
 	"picture": "js/holder.js?100x150",
-	"url": "javascript:void(0);",
+	"picture": "people/images/sm.jpg",
 	"team": "pjs"
 },
 {
