@@ -126,7 +126,7 @@ var person = [
 	"name_kr": "조현규",
 	"name_en": "Hyeongyu Cho",
 	"picture": "people/images/hg.jpg",
-	"url": "javascript:void(0);",
+    "url": "http://hyeongyu.blogspot.kr",
 	"team": "pjs uncore"
 },
 {
