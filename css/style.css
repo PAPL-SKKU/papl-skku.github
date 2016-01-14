@@ -264,13 +264,14 @@ li.dropdown:hover ul.dropdown-menu {
  }
  
 .paper .fa {
+    color: red;
 }
 
 .paper h4 {
     margin-bottom: 0;
 }
 
-.paper a {
+.paper h4 a {
     color: black;
 }
 
