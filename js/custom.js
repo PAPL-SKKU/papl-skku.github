@@ -302,8 +302,7 @@ function loadMenu(team, current) {
     $(".nav .dropdown .dropdown-menu").append(dropdown);
  
     // highlight current page
-    console.log(this.location.pathname);
-    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    $('a[href="' + this.location.pathname.split("/").pop() + '"]').parent().addClass('active');
 }
 
 /* mobile nav toggle */
