@@ -53,7 +53,7 @@
             <div class="content">
                 <h3>About Us</h3>
                 <p>
-                We are awesome!
+                Please fill here.
                 </p>
                 <hr>
 
@@ -89,14 +89,12 @@
     <script src="pubs/list.js"></script>
     <script>
     loadMenu(team);
-    var team = "supercomputing";
+    var teamName = "supercomputing";
     $(".dropdown").addClass("active");
-    $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
-    $(".header").addClass(team);
 
     for (var i in person) {
         var c = person[i];
-        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
+        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+teamName)) >= 0) {
         // if (c.team != undefined) {
             var content =   "<div class='person col-md-2 col-sm-3 col-xs-6 wow bounceIn "+c.team+"'>\
                                 <a href='"+c.url+"' class='thumbnail' target='_blank'>\
@@ -110,7 +108,7 @@
         }
     }
 
-    loadPubs(team);
+    loadPubs(teamName);
 
     if (!isMobile()) {
         new WOW().init();

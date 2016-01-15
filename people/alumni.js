@@ -92,7 +92,7 @@ person = person.concat([
 	"name_kr": "김재혁",
 	"name_en": "Jaehyeok Kim",
 	"picture": "people/images/kjh.jpg",
-    "team": "pjs",
+    "team": "typed",
 	"position": "삼성전자 SLSI"
 },
 {

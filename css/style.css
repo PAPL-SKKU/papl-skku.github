@@ -297,25 +297,6 @@ li.dropdown:hover ul.dropdown-menu {
     display: inline-block;
 }
 
-
-
-
-/************************
- * Team
- ************************/
-
-.header.pjs {
-    min-height: 500px;
-    width: 100%;
-    background: url('../images/datacenter.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-
-
 #people {
     background-color: #f4f4f4;
 }

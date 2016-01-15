@@ -38,7 +38,7 @@ var person = [
 	"name_en": "Channoh Kim",
 	"picture": "people/images/cn.jpg",
 	"url": "http://channoh.github.io",
-	"team": "pjs"
+	"team": "pjs typed"
 },
 {
 	"status": "PhD",
@@ -46,7 +46,7 @@ var person = [
 	"name_en": "Younghwan Oh",
 	"picture": "people/images/oyh.jpg",
 	"url": "http://micol.tistory.com",
-	"team": "core pjs"
+	"team": "core"
 },
 {
 	"status": "PhD",
@@ -95,7 +95,7 @@ var person = [
 	"name_en": "Dooyoung Kim",
 	"picture": "people/images/dy.jpg",
 	"url": "javascript:void(0);",
-	"team": "pjs"
+	"team": "typed"
 },
 {
 	"status": "MS",
@@ -127,7 +127,7 @@ var person = [
 	"name_en": "Hyeongyu Cho",
 	"picture": "people/images/hg.jpg",
     "url": "http://hyeongyu.blogspot.kr",
-	"team": "pjs uncore"
+	"team": "typed"
 },
 {
 	"status": "MS",
@@ -135,7 +135,7 @@ var person = [
 	"name_en": "Sungmin Kim",
 	"picture": "people/images/sm.jpg",
 	"url": "javascript:void(0);",
-	"team": "pjs"
+	"team": "typed"
 },
 {
 	"status": "MS",

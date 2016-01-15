@@ -18,6 +18,17 @@
 
     <!-- Customize -->
     <link href="css/style.css" rel="stylesheet" media="screen">
+    <style>
+    .header {
+        min-height: 500px;
+        width: 100%;
+        background: url('images/rcloud.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    </style>
 </head>
 <body>
 
@@ -43,11 +54,9 @@
     <section id="content">
         <div class="header">
             <div class="content text-shadow">
-                <h1>Parallel JavaScript</h1>
+                <h1>R Cloud</h1>
                 <p>
-                We've studied data parallelization (Web Worker, WebCL)
-                speculative parallelization, and DVFS on Web platform 
-                for heterogeneous multicore architecture.
+                Please fill here!
                 </p>
             </div>
         </div>
@@ -55,7 +64,7 @@
             <div class="content">
                 <h3>About Us</h3>
                 <p>
-                We are awesome!
+                Please fill here!
                 </p>
                 <hr>
 
@@ -92,14 +101,12 @@
     <script>
     loadMenu(team);
 
-    var team = "rcloud";
+    var teamName = "rcloud";
     $(".dropdown").addClass("active");
-    // $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
-    $(".header").addClass(team);
 
     for (var i in person) {
         var c = person[i];
-        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
+        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+teamName)) >= 0) {
         // if (c.team != undefined) {
             var content =   "<div class='person col-md-2 col-sm-3 col-xs-6 wow bounceIn "+c.team+"'>\
                                 <a href='"+c.url+"' class='thumbnail' target='_blank'>\
@@ -113,7 +120,7 @@
         }
     }
 
-    loadPubs(team);
+    loadPubs(teamName);
 
     if (!isMobile()) {
         new WOW().init();

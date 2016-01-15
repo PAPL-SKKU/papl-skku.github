@@ -173,7 +173,7 @@ function loadPeople(person, all) {
     }
 
     function alumni(c) {
-        var content =   "<div class='alumni row wow bounceIn "+c.team+"'>\
+        var content =   "<div class='alumni row "+c.team+"'>\
                             <div class='col-xs-12'>\
                                 <h4>"+c.name_en+" <small>("+c.name_kr+")</small></h4>\
                                 <p>"+c.status+". Now at "+c.position+"</p>\

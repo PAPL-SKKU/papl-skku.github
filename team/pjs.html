@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PJS@PAPL</title>
-		<base href="../">
+    <base href="../">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,6 +18,18 @@
 
     <!-- Customize -->
     <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <style>
+    .header {
+        min-height: 500px;
+        width: 100%;
+        background: url('images/pjs.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    </style>
 </head>
 <body>
 
@@ -91,14 +103,12 @@
     <script src="pubs/list.js"></script>
     <script>
     loadMenu(team);
-    var team = "pjs";
+    var teamName = "pjs";
     $(".dropdown").addClass("active");
-    $(".dropdown-menu > li > a[href^="+team+"]").parent().addClass("active");
-    $(".header").addClass(team);
 
     for (var i in person) {
         var c = person[i];
-        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+team)) >= 0) {
+        if (c.team != undefined && c.team.search(new RegExp("(\\s|^)"+teamName)) >= 0) {
         // if (c.team != undefined) {
             var content =   "<div class='person col-md-2 col-sm-3 col-xs-6 wow bounceIn "+c.team+"'>\
                                 <a href='"+c.url+"' class='thumbnail' target='_blank'>\
@@ -112,7 +122,7 @@
         }
     }
 
-    loadPubs(team);
+    loadPubs(teamName);
 
     if (!isMobile()) {
         new WOW().init();
