@@ -127,7 +127,7 @@ var person = [
 	"name_en": "Hyeongyu Cho",
 	"picture": "people/images/hg.jpg",
     "url": "http://hyeongyu.blogspot.kr",
-	"team": "typed"
+	"team": "uncore"
 },
 {
 	"status": "MS",
@@ -151,6 +151,6 @@ var person = [
 	"name_en": "Namho Kim",
 	"picture": "js/holder.js?100x150",
 	"url": "javascript:void(0);",
-	"team": "core"
+	"team": "typed"
 },
 ];
