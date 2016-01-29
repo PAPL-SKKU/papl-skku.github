@@ -6,8 +6,16 @@
 * **List**: people/list.js
 
 ## Publications
-* **Picture Location**: pubs/
+* **PDF Location**: pubs/
 * **List**: pubs/list.js
+
+## Apache configuration
+```
+sudo cp parallel.skku.edu.conf /etc/apache2/sites-enabled
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo service apache2 restart
+```
 
 
 ## Used Libraries
