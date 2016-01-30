@@ -159,6 +159,20 @@ function teamFilter(team) {
 
 }
 
+function pubsFilter(_this) {
+    var year = $(_this).text();
+    $(".person").css("visibility", "visible");
+    if (year === "All") {
+        $(".paper").show(400);
+
+    } else {
+        $(".paper."+year+"").show(400);
+        $(".paper").not(".all, ."+year+"").hide(400);
+    }
+    $(".btn.active").removeClass("active");
+    $(_this).addClass("active");
+}
+
 function loadPeople(person, all) {
     function template(c) {
         var content =   "<div class='person col-md-2 col-sm-3 col-xs-6 wow bounceIn "+c.team+"'>\
