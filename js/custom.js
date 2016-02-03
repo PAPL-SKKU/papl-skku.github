@@ -140,10 +140,11 @@ var news = new function() {
 
 var initRecentNews = news.init;
 
-function teamFilter(team) {
-    $(".person").css("visibility", "visible");
-    $(".alumni").css("visibility", "visible");
-    if (team === "all") {
+function teamFilter(_this) {
+    var team = $(_this).text();
+    // $(".person").css("visibility", "visible");
+    // $(".alumni").css("visibility", "visible");
+    if (team === "All") {
         $(".person").show(400);
         $(".alumni").show(400);
 
@@ -155,13 +156,13 @@ function teamFilter(team) {
     }
 
     $("#people .btn.active").removeClass("active");
-    $("#people .btn."+team).addClass("active");
+    $(_this).addClass("active");
 
 }
 
 function pubsFilter(_this) {
     var year = $(_this).text();
-    $(".person").css("visibility", "visible");
+    // $(".person").css("visibility", "visible");
     if (year === "All") {
         $(".paper").show(400);
 
@@ -270,7 +271,7 @@ function loadTeamBtn() {
     var dropdown = "";
     var filter = "";
     for (var i in team) {
-        filter += "<a href=\"javascript:teamFilter('"+team[i].key+"')\" class='btn btn-default "+team[i].key+"'>"+team[i].key+"</a>";
+        filter += "<a href='#' onclick=\"javascript:teamFilter(this)\" class='btn btn-default'>"+team[i].key+"</a>";
     }
     $("#people .btn-group").append(filter);
 }
