@@ -101,7 +101,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "배종현",
 	"name_en": "Jonghyun Bae",
-	"picture": "js/holder.js?100x150",
+	"picture": "people/images/bjh.jpg",
 	"url": "javascript:void(0);",
 	"team": "rcloud"
 },
@@ -109,7 +109,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김문경",
 	"name_en": "Wenjing Jin",
-	"picture": "js/holder.js?100x150",
+	"picture": "people/images/mk.jpg",
 	"url": "javascript:void(0);",
 	"team": "rcloud"
 },
@@ -141,7 +141,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "허준",
 	"name_en": "Jun Heo",
-	"picture": "js/holder.js?100x150",
+	"picture": "people/images/hj.jpg",
 	"url": "javascript:void(0);",
 	"team": "uncore"
 },
@@ -149,7 +149,7 @@ var person = [
 	"status": "MS",
 	"name_kr": "김남호",
 	"name_en": "Namho Kim",
-	"picture": "js/holder.js?100x150",
+	"picture": "people/images/nh.jpg",
 	"url": "javascript:void(0);",
 	"team": "typed"
 },
