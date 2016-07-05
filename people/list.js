@@ -13,7 +13,7 @@ var person = [
 	"name_kr": "장학범",
 	"name_en": "Hakbeom Jang",
 	"picture": "people/images/hb.jpg",
-	"url": "javascript:void(0);",
+	"url": "https://sites.google.com/site/hakbeomjang/",
 	"team": "uncore"
 },
 {
